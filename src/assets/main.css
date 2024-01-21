@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dark{
+  background: #232423;
+  color: #f9f5dd;
+}
+
+body{
+  background: #fef6cb;
+}
+
+* {
+  color: #333333;
+  touch-action: manipulation;
+}
