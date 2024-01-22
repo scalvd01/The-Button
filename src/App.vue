@@ -266,7 +266,8 @@ function setTutorialToWatched() {
   <main class="flex flex-col items-center">
     <StatsInfoComponent />
 
-    <TheButtonComponent class="absolute bottom-1/2 translate-y-1/2 size-52" />
+    <!-- <TheButtonComponent class="absolute bottom-1/2 translate-y-1/2 size-52" /> -->
+    <TheButtonComponent class="mt-24 size-52" />
   </main>
 
   <div
