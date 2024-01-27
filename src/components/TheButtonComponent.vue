@@ -3,7 +3,9 @@ import { inject } from 'vue'
 
 const gameData = inject('gameData')
 
-function theButtonClicked() {
+import { useThrottleFn } from '@vueuse/core'
+
+const theButtonClicked = useThrottleFn(() => {
   const prob = Math.random() * 100
   if (gameData.value.currentProb < prob) {
     gameData.value.points++
@@ -18,12 +20,12 @@ function theButtonClicked() {
     gameData.value.resets++
     gameData.value.points = 0
   }
-}
+}, 100)
 </script>
 
 <template>
   <button
-    @click="theButtonClicked()"
+    @click="theButtonClicked"
     class="bg-red-500 rounded-full transition duration-75 ease-in-out active:scale-95"
   ></button>
 </template>
