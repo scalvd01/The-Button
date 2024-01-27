@@ -20,7 +20,7 @@ const theButtonClicked = useThrottleFn(() => {
     gameData.value.resets++
     gameData.value.points = 0
   }
-}, 100)
+}, 170)
 </script>
 
 <template>
