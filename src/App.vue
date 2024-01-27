@@ -90,9 +90,9 @@ const gameData = ref({
   total: 0,
   resets: 0,
   currentProb: 0,
-  maxPointsShown: false,
-  totalShown: false,
-  resetsShown: false
+  maxPointsShown: true,
+  totalShown: true,
+  resetsShown: true
 })
 provide('gameData', gameData)
 
